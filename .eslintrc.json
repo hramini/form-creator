@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": ["off"],
+    "import/prefer-default-export": ["off"],
+    // "import/no-cycle": ["off"],
+    "class-methods-use-this": ["off"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-uses-react": ["off"],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unescaped-entities": ["off"],
+    "react/function-component-definition": ["off"],
+    "react/prefer-stateless-function": ["off"],
+    "react/no-unused-class-component-methods": ["off"],
+    "react/no-array-index-key": ["off"]
+  }
+}

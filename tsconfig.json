@@ -1,0 +1,26 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "strict": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "strictPropertyInitialization": false,
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "noResolve": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@basics/*": ["basics/*"],
+      "@components/*": ["components/*"],
+      "@theme/*": ["theme/*"],
+      "@utils/*": ["utils/*"],
+      "@root/*": ["*.ts", "*.tsx", "*.html", "*.css"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
