@@ -10,6 +10,7 @@ export enum InputType {
   HIDDEN = 'hidden',
   RADIO = 'radio',
   CHECKBOX = 'checkbox',
+  DATE = 'date',
 }
 
 export interface IInputProps extends StandardTextFieldProps {

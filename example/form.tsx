@@ -16,27 +16,25 @@ export const Form = (): ReactElement => {
         }}
         submitButtonText="Submit"
         defaultGridSize={{
-          xs: 2,
+          xs: 4,
         }}
         inputData={[
           {
             name: 'salam',
             label: 'salam kako',
             placeholder: 'okeye',
-            // error: true,
-            // errorMessage: 'this is error',
+            gridOrder: 3,
           },
           {
             name: 'hi',
             label: 'salam hi',
             placeholder: 'okeye',
-            // error: true,
-            // errorMessage: 'this is error',
+            multiline: true,
+            rows: 4,
           },
           {
             name: 'bye',
             label: 'Bye Kako',
-            type: InputType.FILE,
           },
           {
             name: 'gender',

@@ -47,12 +47,14 @@ export const FormFields = (props: IFormFieldsProps): ReactElement => {
             errorMessage,
             gridSize = defaultGridSize,
             value,
+            gridOrder = index,
             ...restInputProps
           } = inputProps;
 
           return (
             <Grid
               item
+              order={gridOrder}
               sx={{ marginTop: sizeCalc(16) }}
               key={index}
               {...gridSize}
@@ -64,7 +66,7 @@ export const FormFields = (props: IFormFieldsProps): ReactElement => {
                 error={error}
                 subText={error && errorMessage ? errorMessage : ''}
                 value={value ?? values?.[name]}
-                // onChange={handleChange}
+                onChange={handleChange}
                 {...restInputProps}
               />
             </Grid>

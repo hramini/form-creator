@@ -1,5 +1,7 @@
 import { Button } from '@components/button/button';
 import { FormFields } from '@components/form-fields/form-fields';
+import { Grid } from '@mui/material';
+import { sizeCalc } from '@utils/size-calculator/size-calculator';
 import { useFormik } from 'formik';
 import { ReactElement } from 'react';
 import { IFormCreatorProps } from './form-creator-type';
@@ -21,7 +23,11 @@ export const FormCreator = (props: IFormCreatorProps): ReactElement => {
         values={values}
         handleChange={handleChange}
       />
-      <Button type="submit">{submitButtonText}</Button>
+      <Grid sx={{ paddingInline: sizeCalc(8) }}>
+        <Button fullWidth type="submit" sx={{ marginTop: sizeCalc(16) }}>
+          {submitButtonText}
+        </Button>
+      </Grid>
     </form>
   );
 };

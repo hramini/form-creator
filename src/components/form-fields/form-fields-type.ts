@@ -21,6 +21,7 @@ export interface IFormFieldsInputProperties {
   errorMessage?: string;
   multiline?: boolean;
   gridSize?: IGridSizeBreakpoint;
+  gridOrder?: number;
   rows?: number;
   pattern?: string;
   step?: string;
