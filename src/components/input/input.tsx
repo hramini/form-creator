@@ -1,4 +1,5 @@
 import { Grid, TextField } from '@mui/material';
+import { sizeCalc } from '@utils/size-calculator/size-calculator';
 import { ReactElement } from 'react';
 import { IInputProps } from './input-type';
 
@@ -25,7 +26,7 @@ export const Input = (props: IInputProps): ReactElement => {
         variant="outlined"
         error={error}
         disabled={disabled}
-        sx={{ ...sx }}
+        sx={{ '& > .MuiInputBase-root': { height: sizeCalc(56) }, ...sx }}
         inputProps={{
           pattern,
           min,
